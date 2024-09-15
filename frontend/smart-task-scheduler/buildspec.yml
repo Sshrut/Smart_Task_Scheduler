@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14  # Or whichever version you're using
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm run build
+
+artifacts:
+  base-directory: build
+  files:
+    - '**/*'
+
+cache:
+  paths:
+    - 'node_modules/**/*'

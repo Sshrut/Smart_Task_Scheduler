@@ -1,0 +1,20 @@
+branch-defaults:
+  default:
+    environment: tst-env
+    group_suffix: null
+  main:
+    environment: null
+global:
+  application_name: taskSchedulerDeployment
+  branch: null
+  default_ec2_keyname: aws-eb
+  default_platform: Python 3.11 running on 64bit Amazon Linux 2023
+  default_region: us-east-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: null
+  sc: null
+  workspace_type: Application

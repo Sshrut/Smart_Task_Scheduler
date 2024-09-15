@@ -1,0 +1,34 @@
+/* BackButton.css */
+
+.back-button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.back-button:hover {
+  background-color: #1557b0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.back-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.4);
+}
+
+@media (max-width: 600px) {
+  .back-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+}

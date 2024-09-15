@@ -1,0 +1,28 @@
+.app-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .login-form, .task-input-form {
+    margin: 20px auto;
+    width: 300px;
+  }
+  
+  input, select, button {
+    margin: 5px 0;
+  }
+  
+  .task-list {
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  

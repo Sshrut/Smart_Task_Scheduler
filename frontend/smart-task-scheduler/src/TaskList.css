@@ -1,0 +1,70 @@
+.task-list-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .task-list-heading {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .no-tasks-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #888;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-item.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  .task-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .task-content {
+    margin-left: 10px;
+  }
+  
+  .priority {
+    font-weight: bold;
+  }
+  
+  .priority-urgent {
+    color: #e74c3c;
+  }
+  
+  .priority-high {
+    color: #f39c12;
+  }
+  
+  .priority-medium {
+    color: #3498db;
+  }
+  
+  .priority-low {
+    color: #2ecc71;
+  }
+  .priority-none {
+    color: gray; /* Or any other style for 'None' priority */
+  }
+  
