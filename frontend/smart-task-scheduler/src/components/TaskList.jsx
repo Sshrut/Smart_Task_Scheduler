@@ -113,7 +113,12 @@ const TaskList = () => {
   const formatDate = (dateStr) => {
     if (!dateStr) return '';
     const date = new Date(dateStr);
-    return isNaN(date.getTime()) ? dateStr : new Date(date.getTime() + date.getTimezoneOffset() * 60000).toLocaleDateString();
+
+    // Add one day to the date
+    date.setDate(date.getDate() + 1);
+
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    return isNaN(date.getTime()) ? dateStr : date.toLocaleDateString(undefined, options);
   };
 
   const getPriorityClass = (priority) => {
@@ -220,3 +225,4 @@ const TaskList = () => {
 };
 
 export default TaskList;
+
