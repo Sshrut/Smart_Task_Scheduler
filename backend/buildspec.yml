@@ -3,13 +3,24 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.8
+      python: 3.8  # Specify your Python version
+    commands:
+      - echo Installing dependencies...
+      - pip install -r requirements.txt  # Install dependencies from requirements.txt
+
   pre_build:
     commands:
-      - pip install -r requirements.txt
+      - echo Pre-Build Phase: Environment setup completed.
+  
   build:
     commands:
-      - python -m pytest tests/
+      - echo Running unit tests...
+      - python -m pytest tests/ --maxfail=1 --disable-warnings  # Run tests in 'tests/' folder
+
+  post_build:
+    commands:
+      - echo Build and test phases completed successfully.
+
 artifacts:
   files:
     - '**/*'
